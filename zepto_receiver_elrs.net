@@ -1,15 +1,15 @@
 (export (version D)
   (design
-    (source C:\Users\Christian\Desktop\Elektronik\zepto_reciever_elrs\zepto_reciever_elrs.sch)
-    (date "10.03.2021 17:54:46")
-    (tool "Eeschema (5.1.4)-1")
+    (source /home/christoph/ext1TB/projekte/37_RC/kicad/git-zeptoELRS/zeptoELRS/zepto_receiver_elrs.sch)
+    (date "Mi 10 Mär 2021 23:06:36 CET")
+    (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
         (company)
         (rev)
-        (date)
-        (source zepto_reciever_elrs.sch)
+        (date 2021-03-10)
+        (source zepto_receiver_elrs.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
@@ -17,7 +17,7 @@
   (components
     (comp (ref R5)
       (value 100R)
-      (footprint Resistor_SMD:R_0201_0603Metric)
+      (footprint ftprnts:R_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,004)
@@ -27,7 +27,7 @@
       (tstamp 60891E37))
     (comp (ref R1)
       (value 270R)
-      (footprint Resistor_SMD:R_0201_0603Metric)
+      (footprint ftprnts:R_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,003)
@@ -37,7 +37,7 @@
       (tstamp 60959030))
     (comp (ref D2)
       (value LED_WHITE)
-      (footprint LED_SMD:LED_0402_1005Metric)
+      (footprint ftprnts:LED_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,053)
@@ -47,7 +47,7 @@
       (tstamp 6081EA93))
     (comp (ref R4)
       (value 10k)
-      (footprint Resistor_SMD:R_0201_0603Metric)
+      (footprint ftprnts:R_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,003)
@@ -64,7 +64,7 @@
       (tstamp 60926949))
     (comp (ref C8)
       (value 100nF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,007)
@@ -74,7 +74,7 @@
       (tstamp 6091F427))
     (comp (ref C13)
       (value 1nF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -111,7 +111,7 @@
       (tstamp 6090F5EA))
     (comp (ref C3)
       (value 10µF)
-      (footprint Capacitor_SMD:C_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,018)
@@ -121,7 +121,7 @@
       (tstamp 608EE51A))
     (comp (ref C5)
       (value 10µF)
-      (footprint Capacitor_SMD:C_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,018)
@@ -137,7 +137,7 @@
       (tstamp 608E79FE))
     (comp (ref C11)
       (value 2.2uF)
-      (footprint ftprnts:0805_low_esl_cap_avx)
+      (footprint ftprnts:0805_low_esl_cap_avx_w_via_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,089)
@@ -147,7 +147,7 @@
       (tstamp 608D1194))
     (comp (ref C10)
       (value 2.2uF)
-      (footprint ftprnts:0805_low_esl_cap_avx_w_via)
+      (footprint ftprnts:0805_low_esl_cap_avx_w_via_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,089)
@@ -167,7 +167,7 @@
       (tstamp 608C4840))
     (comp (ref C9)
       (value 2.2uF)
-      (footprint ftprnts:0805_low_esl_cap_avx)
+      (footprint ftprnts:0805_low_esl_cap_avx_w_via_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,089)
@@ -177,7 +177,7 @@
       (tstamp 608C1865))
     (comp (ref C7)
       (value 2.2uF)
-      (footprint ftprnts:0805_low_esl_cap_avx_w_via)
+      (footprint ftprnts:0805_low_esl_cap_avx_w_via_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,089)
@@ -187,7 +187,7 @@
       (tstamp 608B76A3))
     (comp (ref C4)
       (value 1µF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,014)
@@ -197,7 +197,7 @@
       (tstamp 608A1592))
     (comp (ref R3)
       (value 10k)
-      (footprint Resistor_SMD:R_0201_0603Metric)
+      (footprint ftprnts:R_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,003)
@@ -225,7 +225,7 @@
       (tstamp 6088D09F))
     (comp (ref C26)
       (value 3.3pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -234,7 +234,7 @@
       (tstamp 608834B3))
     (comp (ref C21)
       (value 3.3pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -243,7 +243,7 @@
       (tstamp 60882434))
     (comp (ref C18)
       (value 33pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -252,7 +252,7 @@
       (tstamp 60880CF5))
     (comp (ref L6)
       (value 8.7nH)
-      (footprint Inductor_SMD:L_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -261,7 +261,7 @@
       (tstamp 6087F9F5))
     (comp (ref C25)
       (value 1pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -270,7 +270,7 @@
       (tstamp 60872506))
     (comp (ref C22)
       (value 3.6pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -279,7 +279,7 @@
       (tstamp 60870894))
     (comp (ref C20)
       (value 2.7pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -288,7 +288,7 @@
       (tstamp 6086A111))
     (comp (ref L4)
       (value 11nH)
-      (footprint Inductor_SMD:L_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -297,7 +297,7 @@
       (tstamp 608698AF))
     (comp (ref C24)
       (value 1.2pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -306,7 +306,7 @@
       (tstamp 60866464))
     (comp (ref L5)
       (value 8.7nH)
-      (footprint Inductor_SMD:L_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -315,7 +315,7 @@
       (tstamp 60864DB6))
     (comp (ref C19)
       (value 68pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -324,7 +324,7 @@
       (tstamp 6086369C))
     (comp (ref C16)
       (value 5.6pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -333,7 +333,7 @@
       (tstamp 60858940))
     (comp (ref C14)
       (value 1.2pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -342,7 +342,7 @@
       (tstamp 608581D1))
     (comp (ref L3)
       (value 3.6nH)
-      (footprint Inductor_SMD:L_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -351,7 +351,7 @@
       (tstamp 60857423))
     (comp (ref C15)
       (value 2.2pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -360,7 +360,7 @@
       (tstamp 60855E6A))
     (comp (ref L2)
       (value 33nH)
-      (footprint Inductor_SMD:L_0402_1005Metric)
+      (footprint ftprnts:L_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -369,7 +369,7 @@
       (tstamp 60852E56))
     (comp (ref C2)
       (value 1µF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,014)
@@ -379,7 +379,7 @@
       (tstamp 6084E6A4))
     (comp (ref C17)
       (value 6.2pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -388,7 +388,7 @@
       (tstamp 6084ACED))
     (comp (ref C23)
       (value 6.2pF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,05))
@@ -406,7 +406,7 @@
       (tstamp 60844049))
     (comp (ref C1)
       (value 1µF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,014)
@@ -416,7 +416,7 @@
       (tstamp 60833B31))
     (comp (ref C6)
       (value 1µF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint ftprnts:C_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,014)
@@ -436,7 +436,7 @@
       (tstamp 6082EDE3))
     (comp (ref D1)
       (value LED_BLUE)
-      (footprint LED_SMD:LED_0402_1005Metric)
+      (footprint ftprnts:LED_0402_1005Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,059)
@@ -458,7 +458,7 @@
       (tstamp 60817AFC))
     (comp (ref R2)
       (value 270R)
-      (footprint Resistor_SMD:R_0201_0603Metric)
+      (footprint ftprnts:R_0201_0603Metric_dense)
       (datasheet ~)
       (fields
         (field (name BomCos@10k) 0,003)
@@ -720,15 +720,15 @@
         (pin (num J9) (name RFO_HP) (type output)))))
   (libraries
     (library (logical Connector)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
+      (uri /usr/share/kicad/library/Connector.lib))
     (library (logical Device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
+      (uri /usr/share/kicad/library/Device.lib))
     (library (logical Mechanical)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib"))
+      (uri /usr/share/kicad/library/Mechanical.lib))
     (library (logical Switch)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Switch.lib"))
+      (uri /usr/share/kicad/library/Switch.lib))
     (library (logical sch_comp)
-      (uri C:\Users\Christian\Desktop\Elektronik\zepto_reciever_elrs/sch_comp.lib)))
+      (uri /home/christoph/ext1TB/projekte/37_RC/kicad/git-zeptoELRS/zeptoELRS/sch_comp.lib)))
   (nets
     (net (code 1) (name 3.3-5V_IN)
       (node (ref TP3) (pin 1))

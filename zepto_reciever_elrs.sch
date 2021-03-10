@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:zepto_reciever_elrs-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -37,9 +38,9 @@ Wire Wire Line
 Connection ~ 1150 6525
 Wire Wire Line
 	1150 6525 1350 6525
-Text GLabel 5400 3050 0    50   Input ~ 0
+Text GLabel 8000 1850 2    50   Input ~ 0
 LED1
-Text GLabel 5400 2750 0    50   Input ~ 0
+Text GLabel 8000 1650 2    50   Input ~ 0
 LED2
 $Comp
 L power:GND #PWR014
@@ -512,7 +513,7 @@ Wire Wire Line
 	7575 5675 7425 5675
 Text GLabel 7000 5675 0    50   Input ~ 0
 RFSW_CRTL
-Text GLabel 8000 3650 2    50   Input ~ 0
+Text GLabel 8000 2550 2    50   Input ~ 0
 RFSW_CRTL
 Text Notes 11000 2825 1    50   ~ 0
 Filters and matching need to be tuned!\nUse these values as a starting point\n
@@ -532,12 +533,6 @@ Wire Notes Line
 	10775 3225 9450 3225
 Wire Notes Line
 	9450 3225 9450 1925
-Wire Notes Line
-	9450 1925 8325 1925
-Wire Notes Line
-	8325 1925 8325 700 
-Wire Notes Line
-	8325 700  10775 700 
 Wire Wire Line
 	2950 6900 2950 6950
 Connection ~ 2950 6950
@@ -554,7 +549,7 @@ F 3 "" H 2950 7350 50  0001 C CNN
 	1    2950 7350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5400 2050 0    50   Input ~ 0
+Text GLabel 8000 2650 2    50   Input ~ 0
 BIND_BUT
 $Comp
 L power:+3.3V #PWR09
@@ -881,7 +876,7 @@ F 1 "270R" V 1100 7075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric" V 1030 7075 50  0001 C CNN
 F 3 "~" H 1100 7075 50  0001 C CNN
 F 4 "0,003" H 1100 7075 50  0001 C CNN "BomCos@10k"
-F 5 "RC0201FR-0710KL " H 1100 7075 50  0001 C CNN "Type"
+F 5 "RC0201FR-07270RL" H 1100 7075 50  0001 C CNN "Type"
 	1    1100 7075
 	-1   0    0    1   
 $EndComp
@@ -891,10 +886,10 @@ U 1 1 6081EA93
 P 1350 6675
 F 0 "D2" V 1389 6558 50  0000 R CNN
 F 1 "LED_WHITE" V 1298 6558 50  0000 R CNN
-F 2 "LED_SMD:LED_0201_0603Metric" H 1350 6675 50  0001 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 1350 6675 50  0001 C CNN
 F 3 "~" H 1350 6675 50  0001 C CNN
-F 4 "0,062" H 1350 6675 50  0001 C CNN "BomCos@10k"
-F 5 "SML-LX0201NWD-TR" H 1350 6675 50  0001 C CNN "Type"
+F 4 "0,053" H 1350 6675 50  0001 C CNN "BomCos@10k"
+F 5 "LW QH8G-Q2OO-3K5L-1 " H 1350 6675 50  0001 C CNN "Type"
 	1    1350 6675
 	0    -1   -1   0   
 $EndComp
@@ -1125,9 +1120,9 @@ U 1 1 6089F96C
 P 3250 7150
 F 0 "SW1" V 3159 7298 50  0000 L CNN
 F 1 "SW_Push" V 3250 7298 50  0000 L CNN
-F 2 "ftprnts:SW_EVP-BB2A9B000" H 3250 7350 50  0001 C CNN
+F 2 "ftprnts:EVPBL9A2B000" H 3250 7350 50  0001 C CNN
 F 3 "~" H 3250 7350 50  0001 C CNN
-F 4 "EVP-BB2A1B000" V 3341 7298 50  0000 L CNN "Type"
+F 4 "EVP-BL9A2B000 " V 3341 7298 50  0000 L CNN "Type"
 	1    3250 7150
 	0    1    1    0   
 $EndComp
@@ -1421,10 +1416,10 @@ U 1 1 6082EDE3
 P 3675 1450
 F 0 "L1" H 3727 1496 50  0000 L CNN
 F 1 "15µH" H 3727 1405 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 3675 1450 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3675 1450 50  0001 C CNN
 F 3 "~" H 3675 1450 50  0001 C CNN
-F 4 "MLZ2012N150LT000" H 3675 1450 50  0001 C CNN "Type"
-F 5 "0,032" H 3675 1450 50  0001 C CNN "BomCos@10k"
+F 4 "BRL1608T150M" H 3675 1450 50  0001 C CNN "Type"
+F 5 "0,103" H 3675 1450 50  0001 C CNN "BomCos@10k"
 	1    3675 1450
 	1    0    0    -1  
 $EndComp
@@ -1434,10 +1429,10 @@ U 1 1 6081F8A6
 P 1100 6675
 F 0 "D1" V 1139 6558 50  0000 R CNN
 F 1 "LED_BLUE" V 1048 6558 50  0000 R CNN
-F 2 "LED_SMD:LED_0201_0603Metric" H 1100 6675 50  0001 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 1100 6675 50  0001 C CNN
 F 3 "~" H 1100 6675 50  0001 C CNN
-F 4 "0,057" H 1100 6675 50  0001 C CNN "BomCos@10k"
-F 5 "SML-LX0201USBC-TR" H 1100 6675 50  0001 C CNN "Type"
+F 4 "0,059" H 1100 6675 50  0001 C CNN "BomCos@10k"
+F 5 "VLMB1500-GS08" H 1100 6675 50  0001 C CNN "Type"
 	1    1100 6675
 	0    1    -1   0   
 $EndComp
@@ -1479,12 +1474,83 @@ L Device:R R2
 U 1 1 60958642
 P 1350 7075
 F 0 "R2" V 1250 7075 50  0000 C CNN
-F 1 "10k" V 1350 7075 50  0000 C CNN
+F 1 "270R" V 1350 7075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0201_0603Metric" V 1280 7075 50  0001 C CNN
 F 3 "~" H 1350 7075 50  0001 C CNN
 F 4 "0,003" H 1350 7075 50  0001 C CNN "BomCos@10k"
-F 5 "RC0201FR-0710KL " H 1350 7075 50  0001 C CNN "Type"
+F 5 "RC0201FR-07270RL" H 1350 7075 50  0001 C CNN "Type"
 	1    1350 7075
 	-1   0    0    1   
 $EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 6049244C
+P 825 4125
+F 0 "FID1" H 910 4171 50  0000 L CNN
+F 1 "Fiducial" H 910 4080 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4125 50  0001 C CNN
+F 3 "~" H 825 4125 50  0001 C CNN
+	1    825  4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 60493583
+P 825 4300
+F 0 "FID2" H 910 4346 50  0000 L CNN
+F 1 "Fiducial" H 910 4255 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4300 50  0001 C CNN
+F 3 "~" H 825 4300 50  0001 C CNN
+	1    825  4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 60493677
+P 825 4475
+F 0 "FID3" H 910 4521 50  0000 L CNN
+F 1 "Fiducial" H 910 4430 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4475 50  0001 C CNN
+F 3 "~" H 825 4475 50  0001 C CNN
+	1    825  4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 6049379B
+P 825 4650
+F 0 "FID4" H 910 4696 50  0000 L CNN
+F 1 "Fiducial" H 910 4605 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4650 50  0001 C CNN
+F 3 "~" H 825 4650 50  0001 C CNN
+	1    825  4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6051D24B
+P 8525 2050
+F 0 "#PWR0101" H 8525 1800 50  0001 C CNN
+F 1 "GND" H 8530 1877 50  0000 C CNN
+F 2 "" H 8525 2050 50  0001 C CNN
+F 3 "" H 8525 2050 50  0001 C CNN
+	1    8525 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1750 8525 1750
+Wire Wire Line
+	8525 1750 8525 2050
+Text Notes 8500 2400 0    50   ~ 0
+Grounded for \nrouting purpose
+Wire Notes Line
+	9450 1925 8575 1925
+Wire Notes Line
+	8575 1925 8575 1475
+Wire Notes Line
+	8575 1475 8250 1475
+Wire Notes Line
+	8250 1475 8250 700 
+Wire Notes Line
+	8250 700  10775 700 
 $EndSCHEMATC

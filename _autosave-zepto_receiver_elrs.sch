@@ -14,30 +14,14 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:+3.3V #PWR03
-U 1 1 6081FD31
-P 1150 6525
-F 0 "#PWR03" H 1150 6375 50  0001 C CNN
-F 1 "+3.3V" H 1165 6698 50  0000 C CNN
-F 2 "" H 1150 6525 50  0001 C CNN
-F 3 "" H 1150 6525 50  0001 C CNN
-	1    1150 6525
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1100 6825 1100 6925
 Wire Wire Line
 	1350 6825 1350 6925
 Text GLabel 1100 7225 3    50   Input ~ 0
 LED1
-Text GLabel 1350 7225 3    50   Input ~ 0
+Text GLabel 1350 6525 1    50   Input ~ 0
 LED2
-Wire Wire Line
-	1100 6525 1150 6525
-Connection ~ 1150 6525
-Wire Wire Line
-	1150 6525 1350 6525
 Text GLabel 8000 1850 2    50   Input ~ 0
 LED1
 Text GLabel 5400 3250 0    50   Input ~ 0
@@ -1331,6 +1315,28 @@ Text GLabel 825  4750 0    50   Input ~ 0
 SWDCLK
 Text GLabel 8000 1750 2    50   Input ~ 0
 SWDIO
-Text GLabel 8000 1950 2    50   Input ~ 0
+Text GLabel 8000 1650 2    50   Input ~ 0
 SWDCLK
+$Comp
+L power:+3.3V #PWR03
+U 1 1 6081FD31
+P 1100 6525
+F 0 "#PWR03" H 1100 6375 50  0001 C CNN
+F 1 "+3.3V" H 1115 6698 50  0000 C CNN
+F 2 "" H 1100 6525 50  0001 C CNN
+F 3 "" H 1100 6525 50  0001 C CNN
+	1    1100 6525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6058EF5F
+P 1350 7225
+F 0 "#PWR0101" H 1350 6975 50  0001 C CNN
+F 1 "GND" H 1355 7052 50  0000 C CNN
+F 2 "" H 1350 7225 50  0001 C CNN
+F 3 "" H 1350 7225 50  0001 C CNN
+	1    1350 7225
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

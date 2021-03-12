@@ -1638,7 +1638,7 @@
   )
 
   (module Fiducial:Fiducial_0.5mm_Dia_1mm_Outer (layer F.Cu) (tedit 604B6C7F) (tstamp 604BF445)
-    (at 120.9 56.7)
+    (at 120.94 56.7)
     (descr "Circular Fiducial, 0.5mm bare copper top, 1mm keepout (Level C)")
     (tags fiducial)
     (path /6056D526)

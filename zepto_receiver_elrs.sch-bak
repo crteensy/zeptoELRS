@@ -40,7 +40,7 @@ Wire Wire Line
 	1150 6525 1350 6525
 Text GLabel 8000 1850 2    50   Input ~ 0
 LED1
-Text GLabel 8000 1650 2    50   Input ~ 0
+Text GLabel 5400 3250 0    50   Input ~ 0
 LED2
 $Comp
 L power:GND #PWR014
@@ -1158,23 +1158,8 @@ F 4 "0" H 825 4425 50  0001 C CNN "BomCos@10k"
 	1    825  4425
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8000 1750 8525 1750
 Text Notes 8200 2400 0    50   ~ 0
 Grounded for \nrouting purpose
-Wire Wire Line
-	8525 1750 8525 2050
-$Comp
-L power:GND #PWR0101
-U 1 1 6051D24B
-P 8525 2050
-F 0 "#PWR0101" H 8525 1800 50  0001 C CNN
-F 1 "GND" H 8530 1877 50  0000 C CNN
-F 2 "" H 8525 2050 50  0001 C CNN
-F 3 "" H 8525 2050 50  0001 C CNN
-	1    8525 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L sch_comp:0900FM15D0039 U4
 U 1 1 604AB514
@@ -1325,10 +1310,10 @@ Tantal and thes capacitors form together with the layerstack\na complex dcouplin
 Text GLabel 7575 5475 0    50   Input ~ 0
 RFO
 $Comp
-L Connector:TestPoint FID?
+L Connector:TestPoint FID3
 U 1 1 6056D526
 P 825 4750
-F 0 "FID?" H 910 4796 50  0000 L CNN
+F 0 "FID3" H 910 4796 50  0000 L CNN
 F 1 "Fiducial" H 910 4705 50  0000 L CNN
 F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4750 50  0001 C CNN
 F 3 "~" H 825 4750 50  0001 C CNN
@@ -1336,4 +1321,16 @@ F 4 "0" H 825 4750 50  0001 C CNN "BomCos@10k"
 	1    825  4750
 	1    0    0    -1  
 $EndComp
+Text GLabel 4875 1650 1    50   Input ~ 0
+NRST
+Text GLabel 825  4125 0    50   Input ~ 0
+NRST
+Text GLabel 825  4425 0    50   Input ~ 0
+SWDIO
+Text GLabel 825  4750 0    50   Input ~ 0
+SWDCLK
+Text GLabel 8000 1750 2    50   Input ~ 0
+SWDIO
+Text GLabel 8000 1950 2    50   Input ~ 0
+SWDCLK
 $EndSCHEMATC

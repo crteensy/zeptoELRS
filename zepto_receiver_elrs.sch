@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:zepto_receiver_elrs-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1331,6 +1330,10 @@ Text GLabel 825  4750 0    50   Input ~ 0
 SWDCLK
 Text GLabel 8000 1750 2    50   Input ~ 0
 SWDIO
-Text GLabel 8000 1950 2    50   Input ~ 0
+Text GLabel 8000 1650 2    50   Input ~ 0
 SWDCLK
+Text GLabel 8000 3050 2    50   Input ~ 0
+UART_TX
+Text Notes 8375 3100 0    50   ~ 10
+UART_TX shorted with\nPA0 to move via
 $EndSCHEMATC

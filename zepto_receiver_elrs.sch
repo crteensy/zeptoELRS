@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:zepto_receiver_elrs-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1136,29 +1137,27 @@ $EndComp
 $Comp
 L Connector:TestPoint FID1
 U 1 1 6049244C
-P 825 4125
-F 0 "FID1" H 910 4171 50  0000 L CNN
-F 1 "Fiducial" H 910 4080 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4125 50  0001 C CNN
-F 3 "~" H 825 4125 50  0001 C CNN
-F 4 "0" H 825 4125 50  0001 C CNN "BomCos@10k"
-	1    825  4125
+P 1150 4100
+F 0 "FID1" H 1235 4146 50  0000 L CNN
+F 1 "Fiducial" H 1235 4055 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1150 4100 50  0001 C CNN
+F 3 "~" H 1150 4100 50  0001 C CNN
+F 4 "0" H 1150 4100 50  0001 C CNN "BomCos@10k"
+	1    1150 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint FID2
 U 1 1 60493583
-P 825 4425
-F 0 "FID2" H 910 4471 50  0000 L CNN
-F 1 "Fiducial" H 910 4380 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4425 50  0001 C CNN
-F 3 "~" H 825 4425 50  0001 C CNN
-F 4 "0" H 825 4425 50  0001 C CNN "BomCos@10k"
-	1    825  4425
+P 1150 4400
+F 0 "FID2" H 1235 4446 50  0000 L CNN
+F 1 "Fiducial" H 1235 4355 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1150 4400 50  0001 C CNN
+F 3 "~" H 1150 4400 50  0001 C CNN
+F 4 "0" H 1150 4400 50  0001 C CNN "BomCos@10k"
+	1    1150 4400
 	1    0    0    -1  
 $EndComp
-Text Notes 8200 2400 0    50   ~ 0
-Grounded for \nrouting purpose
 $Comp
 L sch_comp:0900FM15D0039 U4
 U 1 1 604AB514
@@ -1311,22 +1310,22 @@ RFO
 $Comp
 L Connector:TestPoint FID3
 U 1 1 6056D526
-P 825 4750
-F 0 "FID3" H 910 4796 50  0000 L CNN
-F 1 "Fiducial" H 910 4705 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 825 4750 50  0001 C CNN
-F 3 "~" H 825 4750 50  0001 C CNN
-F 4 "0" H 825 4750 50  0001 C CNN "BomCos@10k"
-	1    825  4750
+P 1150 4725
+F 0 "FID3" H 1235 4771 50  0000 L CNN
+F 1 "Fiducial" H 1235 4680 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Dia_1mm_Outer" H 1150 4725 50  0001 C CNN
+F 3 "~" H 1150 4725 50  0001 C CNN
+F 4 "0" H 1150 4725 50  0001 C CNN "BomCos@10k"
+	1    1150 4725
 	1    0    0    -1  
 $EndComp
 Text GLabel 4875 1650 1    50   Input ~ 0
 NRST
-Text GLabel 825  4125 0    50   Input ~ 0
+Text GLabel 1150 4100 0    50   Input ~ 0
 NRST
-Text GLabel 825  4425 0    50   Input ~ 0
+Text GLabel 1150 4400 0    50   Input ~ 0
 SWDIO
-Text GLabel 825  4750 0    50   Input ~ 0
+Text GLabel 1150 4725 0    50   Input ~ 0
 SWDCLK
 Text GLabel 8000 1750 2    50   Input ~ 0
 SWDIO
@@ -1336,4 +1335,14 @@ Text GLabel 8000 3050 2    50   Input ~ 0
 UART_TX
 Text Notes 8375 3100 0    50   ~ 10
 UART_TX shorted with\nPA0 to move via
+Text Notes 1625 4250 0    50   ~ 0
+Fiducials for the BGA\nThese are SWD Pads \nat the same time
+Wire Notes Line
+	725  3875 2525 3875
+Wire Notes Line
+	2525 3875 2525 4825
+Wire Notes Line
+	2525 4825 725  4825
+Wire Notes Line
+	725  4825 725  3875
 $EndSCHEMATC

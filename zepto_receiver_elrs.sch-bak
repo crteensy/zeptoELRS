@@ -1158,8 +1158,6 @@ F 4 "0" H 825 4425 50  0001 C CNN "BomCos@10k"
 	1    825  4425
 	1    0    0    -1  
 $EndComp
-Text Notes 8200 2400 0    50   ~ 0
-Grounded for \nrouting purpose
 $Comp
 L sch_comp:0900FM15D0039 U4
 U 1 1 604AB514
@@ -1331,6 +1329,10 @@ Text GLabel 825  4750 0    50   Input ~ 0
 SWDCLK
 Text GLabel 8000 1750 2    50   Input ~ 0
 SWDIO
-Text GLabel 8000 1950 2    50   Input ~ 0
+Text GLabel 8000 1650 2    50   Input ~ 0
 SWDCLK
+Text GLabel 8000 3050 2    50   Input ~ 0
+UART_TX
+Text Notes 8375 3100 0    50   ~ 10
+UART_TX shorted with\nPA0 to move via
 $EndSCHEMATC

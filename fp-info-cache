@@ -1,4 +1,4 @@
-18187551007614597
+18192397790681597
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -80031,6 +80031,13 @@ ftprnts
 10
 10
 ftprnts
+AVX_S_CASE
+
+
+0
+2
+2
+ftprnts
 BGS12PL6E6327XTSA1
 
 
@@ -80051,6 +80058,13 @@ capacitor
 0
 2
 2
+ftprnts
+ECS-TXO-25CSMV-320-AM-TR_reduced_pads
+
+
+0
+4
+4
 ftprnts
 EVPBL9A2B000
 
@@ -80093,6 +80107,13 @@ STM32WLE5JBI6
 0
 73
 73
+ftprnts
+TestPoint_Pad_1.5x2mm
+SMD rectangular pad as test Point, square 1.5mm side length
+test point SMD pad rectangle square
+0
+1
+1
 ftprnts
 XTAL_ECS-320-8-47-CKM-TR
 

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:zepto_receiver_elrs-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -208,8 +209,6 @@ Text Notes 700  2150 1    50   ~ 0
 If "notchy" capacitor impedance is \nrequired use smaller caps (Measure!)
 Text GLabel 5400 1150 0    50   Input ~ 0
 XI
-Text GLabel 8000 1050 2    50   Input ~ 0
-XO
 $Comp
 L power:GND #PWR02
 U 1 1 6085062F
@@ -324,8 +323,6 @@ Text GLabel 7000 5675 0    50   Input ~ 0
 RFSW_CRTL
 Text GLabel 5400 3150 0    50   Input ~ 0
 RFSW_CRTL
-Text Notes 12025 2500 1    50   ~ 0
-Filters and matching need to be tuned!\nUse these values as a starting point\n
 Text Notes 9475 6500 0    50   ~ 0
 This might be still necessary or not\n\n
 Wire Notes Line
@@ -352,8 +349,6 @@ F 3 "" H 2950 7350 50  0001 C CNN
 	1    2950 7350
 	1    0    0    -1  
 $EndComp
-Text GLabel 9000 2600 2    50   Input ~ 0
-BIND_BUT
 $Comp
 L power:+3.3V #PWR09
 U 1 1 608AEB20
@@ -1171,74 +1166,74 @@ Wire Wire Line
 $Comp
 L sch_comp:ECS-TXO-25CSMV U5
 U 1 1 604C7152
-P 9550 3475
-F 0 "U5" H 9320 3521 50  0000 R CNN
-F 1 "ECS-TXO-25CSMV-320-AM-TR" H 10975 3325 50  0000 R CNN
-F 2 "ftprnts:ECS-TXO-25CSMV-320-AM-TR_reduced_pads" H 10250 3025 50  0001 C CNN
-F 3 "" H 10250 3025 50  0001 C CNN
-F 4 "500ppb" H 9900 3225 50  0000 C CNN "Tolerance"
-F 5 "1,64" H 9550 3475 50  0001 C CNN "BomCos@10k"
-	1    9550 3475
+P 9375 4125
+F 0 "U5" H 9145 4171 50  0000 R CNN
+F 1 "ECS-TXO-25CSMV-320-AM-TR" H 10800 3975 50  0000 R CNN
+F 2 "ftprnts:ECS-TXO-25CSMV-320-AM-TR_reduced_pads" H 10075 3675 50  0001 C CNN
+F 3 "" H 10075 3675 50  0001 C CNN
+F 4 "500ppb" H 9725 3875 50  0000 C CNN "Tolerance"
+F 5 "1,64" H 9375 4125 50  0001 C CNN "BomCos@10k"
+	1    9375 4125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C14
 U 1 1 604C890B
-P 10300 3375
-F 0 "C14" V 10552 3375 50  0000 C CNN
-F 1 "10pF" V 10461 3375 50  0000 C CNN
-F 2 "ftprnts:C_0201_0603Metric_dense" H 10338 3225 50  0001 C CNN
-F 3 "~" H 10300 3375 50  0001 C CNN
-F 4 "0,05" H 10300 3375 50  0001 C CNN "BomCos@10k"
-	1    10300 3375
+P 10125 4025
+F 0 "C14" V 10377 4025 50  0000 C CNN
+F 1 "10pF" V 10286 4025 50  0000 C CNN
+F 2 "ftprnts:C_0201_0603Metric_dense" H 10163 3875 50  0001 C CNN
+F 3 "~" H 10125 4025 50  0001 C CNN
+F 4 "0,05" H 10125 4025 50  0001 C CNN "BomCos@10k"
+	1    10125 4025
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R6
 U 1 1 604C9485
-P 10000 3375
-F 0 "R6" V 9900 3375 50  0000 C CNN
-F 1 "220R" V 10000 3375 50  0000 C CNN
-F 2 "ftprnts:R_0201_0603Metric_dense" V 9930 3375 50  0001 C CNN
-F 3 "~" H 10000 3375 50  0001 C CNN
-F 4 "0,003" H 10000 3375 50  0001 C CNN "BomCos@10k"
-F 5 "RC0201FR-07270RL" H 10000 3375 50  0001 C CNN "Type"
-	1    10000 3375
+P 9825 4025
+F 0 "R6" V 9725 4025 50  0000 C CNN
+F 1 "220R" V 9825 4025 50  0000 C CNN
+F 2 "ftprnts:R_0201_0603Metric_dense" V 9755 4025 50  0001 C CNN
+F 3 "~" H 9825 4025 50  0001 C CNN
+F 4 "0,003" H 9825 4025 50  0001 C CNN "BomCos@10k"
+F 5 "RC0201FR-07270RL" H 9825 4025 50  0001 C CNN "Type"
+	1    9825 4025
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10450 3375 2    50   Input ~ 0
+Text GLabel 10275 4025 2    50   Input ~ 0
 XI
 $Comp
 L power:GND #PWR0103
 U 1 1 604CCBA0
-P 9450 3775
-F 0 "#PWR0103" H 9450 3525 50  0001 C CNN
-F 1 "GND" H 9455 3602 50  0000 C CNN
-F 2 "" H 9450 3775 50  0001 C CNN
-F 3 "" H 9450 3775 50  0001 C CNN
-	1    9450 3775
+P 9275 4425
+F 0 "#PWR0103" H 9275 4175 50  0001 C CNN
+F 1 "GND" H 9280 4252 50  0000 C CNN
+F 2 "" H 9275 4425 50  0001 C CNN
+F 3 "" H 9275 4425 50  0001 C CNN
+	1    9275 4425
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 604CD2CB
-P 9650 3775
-F 0 "#PWR0104" H 9650 3525 50  0001 C CNN
-F 1 "GND" H 9655 3602 50  0000 C CNN
-F 2 "" H 9650 3775 50  0001 C CNN
-F 3 "" H 9650 3775 50  0001 C CNN
-	1    9650 3775
+P 9475 4425
+F 0 "#PWR0104" H 9475 4175 50  0001 C CNN
+F 1 "GND" H 9480 4252 50  0000 C CNN
+F 2 "" H 9475 4425 50  0001 C CNN
+F 3 "" H 9475 4425 50  0001 C CNN
+	1    9475 4425
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 604CD48E
-P 9450 3175
-F 0 "#PWR0105" H 9450 3025 50  0001 C CNN
-F 1 "+3.3V" H 9465 3348 50  0000 C CNN
-F 2 "" H 9450 3175 50  0001 C CNN
-F 3 "" H 9450 3175 50  0001 C CNN
-	1    9450 3175
+P 9275 3825
+F 0 "#PWR0105" H 9275 3675 50  0001 C CNN
+F 1 "+3.3V" H 9290 3998 50  0000 C CNN
+F 2 "" H 9275 3825 50  0001 C CNN
+F 3 "" H 9275 3825 50  0001 C CNN
+	1    9275 3825
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1255,7 +1250,7 @@ Wire Notes Line
 	8300 1725 8300 725 
 Text Notes 9325 925  0    50   ~ 0
 Using fully integrated filters\nThanks to doghouse
-Text Notes 9225 4275 0    50   ~ 0
+Text Notes 9050 4925 0    50   ~ 0
 Switched to TCXO\n(QTT252-32.000MBI-T as a cheaper (0,90$)\nalternative wit 1 ppm )
 Wire Notes Line
 	4025 6300 4025 7750
@@ -1268,7 +1263,7 @@ Wire Notes Line
 Text Notes 1950 6425 0    50   ~ 0
 Seems not necessary
 Text Notes 4400 7650 0    50   ~ 0
-Tantal and thes capacitors form together with the layerstack\na complex dcoupling system. They are all needed
+Tantal and thes capacitors form together with the layerstack\na complex dcoupling system. They are all needed\n
 Text GLabel 7575 5475 0    50   Input ~ 0
 RFO
 $Comp
@@ -1297,7 +1292,7 @@ Text GLabel 8000 1650 2    50   Input ~ 0
 SWDCLK
 Text GLabel 8000 3050 2    50   Input ~ 0
 UART_TX
-Text Notes 8375 3100 0    50   ~ 10
+Text Notes 8075 3275 0    50   ~ 0
 UART_TX shorted with\nPA0 to move via
 Text Notes 1625 4250 0    50   ~ 0
 Fiducials for the BGA\nThese are SWD Pads \nat the same time
@@ -1351,27 +1346,47 @@ $EndComp
 $Comp
 L Device:C C15
 U 1 1 6057CEF1
-P 4350 2900
-F 0 "C15" H 4175 2800 50  0000 L CNN
-F 1 "68pF" H 4150 2725 50  0000 L CNN
-F 2 "ftprnts:C_0201_0603Metric_dense" H 4388 2750 50  0001 C CNN
-F 3 "~" H 4350 2900 50  0001 C CNN
-F 4 "0,014" H 4350 2900 50  0001 C CNN "BomCos@10k"
-F 5 "GRM033C80J105ME05J" H 4350 2900 50  0001 C CNN "Type"
-	1    4350 2900
+P 9275 3075
+F 0 "C15" H 9100 2975 50  0000 L CNN
+F 1 "68pF" H 9075 2900 50  0000 L CNN
+F 2 "ftprnts:C_0201_0603Metric_dense" H 9313 2925 50  0001 C CNN
+F 3 "~" H 9275 3075 50  0001 C CNN
+F 4 "0,014" H 9275 3075 50  0001 C CNN "BomCos@10k"
+F 5 "GRM033C80J105ME05J" H 9275 3075 50  0001 C CNN "Type"
+	1    9275 3075
 	1    0    0    -1  
 $EndComp
-Text GLabel 4350 2750 1    50   Input ~ 0
+Text GLabel 9275 2925 1    50   Input ~ 0
 VR_PA
 $Comp
 L power:GND #PWR0106
 U 1 1 6058AA62
-P 4350 3050
-F 0 "#PWR0106" H 4350 2800 50  0001 C CNN
-F 1 "GND" H 4355 2877 50  0000 C CNN
-F 2 "" H 4350 3050 50  0001 C CNN
-F 3 "" H 4350 3050 50  0001 C CNN
-	1    4350 3050
+P 9275 3225
+F 0 "#PWR0106" H 9275 2975 50  0001 C CNN
+F 1 "GND" H 9280 3052 50  0000 C CNN
+F 2 "" H 9275 3225 50  0001 C CNN
+F 3 "" H 9275 3225 50  0001 C CNN
+	1    9275 3225
 	1    0    0    -1  
 $EndComp
+Text Notes 4400 7750 0    50   ~ 10
+Does only work well with the supplied layer stackup!!!\n
+Text Notes 9400 3225 0    50   ~ 0
+If a low impedance at exactly \n900Mhz for VR_PA is necsessary \nplace this cap. The Value has to be \nfigured out by measuring, so that the \nserial resonance notch matches 900 Mhz
+Wire Notes Line
+	9025 2600 11025 2600
+Wire Notes Line
+	11025 2600 11025 3475
+Wire Notes Line
+	11025 3475 9025 3475
+Wire Notes Line
+	9025 3475 9025 2600
+Wire Notes Line
+	9025 3550 9025 4950
+Wire Notes Line
+	9025 4950 11025 4950
+Wire Notes Line
+	11025 4950 11025 3550
+Wire Notes Line
+	11025 3550 9025 3550
 $EndSCHEMATC

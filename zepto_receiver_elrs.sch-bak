@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:zepto_receiver_elrs-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2021-03-10"
+Date "2021-03-13"
 Rev ""
 Comp ""
 Comment1 ""
@@ -1268,7 +1269,7 @@ Wire Notes Line
 Text Notes 1950 6425 0    50   ~ 0
 Seems not necessary
 Text Notes 4400 7650 0    50   ~ 0
-Tantal and thes capacitors form together with the layerstack\na complex dcoupling system. They are all needed
+Tantal and thes capacitors form together with the layerstack\na complex dcoupling system. They are all needed\n
 Text GLabel 7575 5475 0    50   Input ~ 0
 RFO
 $Comp
@@ -1374,4 +1375,6 @@ F 3 "" H 4350 3050 50  0001 C CNN
 	1    4350 3050
 	1    0    0    -1  
 $EndComp
+Text Notes 4400 7750 0    50   ~ 10
+Does only work well with the supplied layer stackup!!!\n
 $EndSCHEMATC
